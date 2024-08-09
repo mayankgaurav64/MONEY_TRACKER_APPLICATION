@@ -1,0 +1,120 @@
+/* Body */
+body {
+  background-color: #EEE;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Headings */
+h1, h2 {
+  text-align: center;
+  color: #201E43;
+}
+
+/* Input Section */
+.input-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #134B70;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-section label {
+  font-weight: bold;
+  margin-right: 10px;
+  color: #EEE;
+}
+
+.input-section input, .input-section select {
+  padding: 5px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input-section button {
+  padding: 5px 10px;
+  background-color: #508C9B;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.input-section button:hover {
+  background-color: #134B70;
+  transform: scale(1.1);
+}
+
+/* Expenses List */
+.expenses-list {
+  margin: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #EEE;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #201E43;
+  color: #fff;
+}
+
+tfoot td {
+  font-weight: bold;
+}
+
+/* Delete Button */
+.delete-btn {
+  padding: 5px 10px;
+  background-color: #c64545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #a83b3b;
+  transform: scale(1.1);
+}
+
+/* Charts Section */
+.charts-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+}
+
+.chart-container {
+  width: 45%;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.expense-row {
+  animation: fadeIn 0.5s ease-in;
+}
